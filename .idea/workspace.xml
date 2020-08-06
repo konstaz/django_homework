@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86eee2d0-aee9-46fe-a4e1-c9e4e3d4fa7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/teachers/management/commands/generate_teachers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flake8" beforeDir="false" afterPath="$PROJECT_DIR$/.flake8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/group/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/group/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/group/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/students/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/students/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/students/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/students/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/students_tracker/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students_tracker/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/teachers/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/teachers/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/teachers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/teachers/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/teachers/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/teachers/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/teachers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/teachers/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
