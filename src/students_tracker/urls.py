@@ -1,9 +1,9 @@
-from django.contrib import admin
-from django.urls import path
+from django.contrib import admin  # noqa
+from django.urls import path  # noqa
 
-from students import views
-from group import views as g_views
-from teachers import views as t_views
+from students import views  # noqa
+from group import views as g_views  # noqa
+from teachers import views as t_views  # noqa
 
 urlpatterns = [
     path('admin/', admin.site.urls),

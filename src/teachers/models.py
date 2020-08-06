@@ -4,6 +4,7 @@ from django.db import models
 class Teacher(models.Model):
     first_name = models.CharField(max_length=32)
     last_name = models.CharField(max_length=32)
+    age = models.PositiveSmallIntegerField()
     specification = models.CharField(max_length=32)
     active_groups = models.PositiveSmallIntegerField()
 
