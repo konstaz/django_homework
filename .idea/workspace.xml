@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86eee2d0-aee9-46fe-a4e1-c9e4e3d4fa7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/students_tracker/celery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/contact_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/students/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/students/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/students/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/students/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/students/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/students_tracker/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students_tracker/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/students_tracker/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students_tracker/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/students_tracker/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students_tracker/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -29,8 +30,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fiozRUWcnCfFno9QEzSgMMZfRy" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -74,5 +78,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
