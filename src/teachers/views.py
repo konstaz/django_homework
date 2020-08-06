@@ -1,7 +1,7 @@
 from django.shortcuts import render  # noqa
 from django.http import HttpResponse  # noqa
 from teachers.models import Teacher  # noqa
-
+from forms import TeacherCreateForm
 
 def show_teachers(request):
     params = ['first_name',
@@ -26,3 +26,17 @@ def show_teachers(request):
         response += teacher.info + '<br/>'
 
     return HttpResponse(response)
+
+
+def create_teacher(request):
+   if request.method == 'POST':
+       form = TeacherCreateForm(request.POST)
+       if form.is_valid():
+           form.save()
+       return redirect('/')
+   elif request.method == 'GET':
+       form = TeacherCreateForm()
+
+   context = {'form_name': 'CREATE_TEACHER',
+              'create_form': form}
+   return render(request, 'create.html', context=context)
