@@ -1,4 +1,4 @@
-from django.shortcuts import render  # noqa
+from django.shortcuts import get_object_or_404, redirect, reverse, render  # noqa
 from django.http import HttpResponse  # noqa
 
 import random  # noqa
@@ -20,8 +20,7 @@ def generate_password(length: int = 10) -> str:
 
 def generate_one_student() -> Student:
     fake = Faker()
-    name, surname = fake.name().split()
-    new_student = Student.objects.create(first_name=name, last_name=surname, age=random.randint(0, 100))
+    new_student = Student.objects.create(first_name=fake.first_name(), last_name=fake.last_name(), age=random.randint(0, 100))
 
     return new_student
 
@@ -37,31 +36,17 @@ def hello_world(request):
 def students(request):
     count = Student.objects.count()
     students_queryset = Student.objects.all()
-    response = f'students: {count}<br/>'
-    for student in students_queryset:
-        response += student.info() + '<br/>'
-    return HttpResponse(response)
+    return render(request, 'students-list.html', context={'students': students_queryset, 'count': count})
 
 
 def generate_student(request) -> HttpResponse:
-    return HttpResponse(f'One new user was created: {generate_one_student().info()}')
+    generate_one_student()
+    return redirect(reverse('students:list'))
 
 
-def generate_students(request) -> HttpResponse:
-    count = request.GET.get('count', '10')
-    if not count.isdigit():
-        return HttpResponse('Incorrect request!')
-
-    count = int(count)
-    if count <= 0 or count > 100:
-        return HttpResponse(f'Incorrect count value: {count}')
-
-    new_users = ''
-    for i in range(count):
-        new_one = generate_one_student()
-        new_users += new_one.info() + '<br/>'
-
-    return HttpResponse(new_users)
+def generate_students(request, count) -> HttpResponse:
+    generate_one_student()
+    return redirect(reverse('students:list'))
 
 
 def index(request):
@@ -73,7 +58,7 @@ def create_student(request):
         form = StudentCreateForm(request.POST)
         if form.is_valid():
             form.save()
-        return redirect('/')
+            return redirect(reverse('students:list'))
 
     elif request.method == 'GET':
         form = StudentCreateForm()
@@ -84,3 +69,30 @@ def create_student(request):
     }
 
     return render(request, 'create.html', context=context)
+
+
+def edit_student(request, pk=id):
+    student = get_object_or_404(Student, id=pk)
+
+    if request.method == 'POST':
+        form = StudentCreateForm(request.POST, instance=student)
+
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('students:list'))
+
+    elif request.method == 'GET':
+        form = StudentCreateForm(instance=student)
+
+    context = {
+        'edit_form': form,
+        'student': student,
+    }
+
+    return render(request, 'edit-student.html', context=context)
+
+
+def delete_student(request, pk):
+    student = get_object_or_404(Student, id=pk)
+    student.delete()
+    return redirect(reverse('students:list'))
