@@ -1,11 +1,11 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render  # noqa
+from django.http import HttpResponse  # noqa
 
-import random
-import string
+import random  # noqa
+import string  # noqa
 
-from students.models import Student
-from faker import Faker
+from students.models import Student  # noqa
+from faker import Faker  # noqa
 
 
 def generate_password(length: int = 10) -> str:

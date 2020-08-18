@@ -1,11 +1,26 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-from teachers.models import Teacher
+from django.shortcuts import render  # noqa
+from django.http import HttpResponse  # noqa
+from teachers.models import Teacher  # noqa
 
 
 def show_teachers(request):
+    params = ['first_name',
+              'last_name',
+              'age',
+              'age__gt',
+              'age__lt',
+              'age__lte',
+              'age__gte',
+              'specification',
+              'active_groups'
+              ]
     teachers = Teacher.objects.all()
-    response = ''
+    for param in params:
+        value = request.GET.get(param)
+        if value:
+            teachers = teachers.filter(**{param: value})
+
+    response = f'Count of teachers: {teachers.count()}<br/>'
 
     for teacher in teachers:
         response += teacher.info + '<br/>'
