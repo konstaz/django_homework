@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Groups</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<a href="{% url 'index' %}"><input type="button" value="Index"/></a><br>
+<a href="{% url 'groups:create' %}"><input type="button" value="Create new group"/></a><br><br>
+Count of groups: {{ count }}<br>
+
+<table style="width:100%">
+    <tr>
+        <th>id</th>
+        <th>Teacher</th>
+        <th>Specification</th>
+        <th>Number of students</th>
+        <th>Length</th>
+        <th>Head</th>
+        <th>Curator</th>
+    </tr>
+
+    {% for group in groups %}
+    <tr>
+        <td><a href="{% url 'groups:edit' pk=group.id %}">{{ group.id }}</a></td>
+        <td>{{ group.teacher }}</td>
+        <td>{{ group.specification }}</td>
+        <td>{{ group.count_of_students }}</td>
+        <td>{{ group.length_of_course }}</td>
+        <td>{{ group.head.full_name }}</td>
+        <td>{{ group.curator }}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+</body>
+</html>

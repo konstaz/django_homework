@@ -18,10 +18,11 @@ class Command(BaseCommand):
         specifications = ['Python', 'Javascript', 'Java', 'C++']
         count = options.get('number_of_teachers')
         for _ in range(count):
-            Teacher.objects.create(
+            new_teachers.append(Teacher(
                 first_name=fake.first_name(),
                 last_name=fake.last_name(),
                 age=randint(25, 100),
                 specification=choice(specifications),
                 active_groups=randint(1, 5)
-            )
+            ))
+            Teacher.objects.bulk_create(new_teachers)
