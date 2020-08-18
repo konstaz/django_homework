@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86eee2d0-aee9-46fe-a4e1-c9e4e3d4fa7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/group/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/students/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/teachers/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/edit-group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/edit-student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/edit-teacher.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/group-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/students-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/group/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/group/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/group/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/students/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/students/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/students_tracker/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students_tracker/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/students_tracker/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/students_tracker/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/teachers/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/teachers/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/teachers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/teachers/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
