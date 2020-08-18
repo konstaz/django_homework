@@ -21,3 +21,10 @@ class Student(models.Model):
 
     def __str__(self):
         return self.info()
+
+
+class Logger(models.Model):
+    method = models.CharField(max_length=10)
+    path = models.CharField(max_length=64)
+    execution_time = models.PositiveSmallIntegerField()
+    created = models.DateTimeField(auto_now_add=True)
